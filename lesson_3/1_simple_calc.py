@@ -12,7 +12,7 @@ if op in operations:
             print(num_1 * num_2)
     elif op == "/":
         if num_2 == 0:
-            raise ZeroDivisionError
+            print('Ділення на 0 неможливе')
         print(num_1 / num_2)
 else:
     raise ValueError(f"Немає такої операції {op} у моєму калькуляторі")
