@@ -13,6 +13,7 @@ if op in operations:
     elif op == "/":
         if num_2 == 0:
             print('Ділення на 0 неможливе')
-        print(num_1 / num_2)
+        else:
+            print(num_1 / num_2)
 else:
     raise ValueError(f"Немає такої операції {op} у моєму калькуляторі")
