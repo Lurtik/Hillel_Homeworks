@@ -1,9 +1,7 @@
 operations = "+-/**"
 
 while True:
-    calculation = input("Enter your calculation in format (a 'operation' b) / or stop to close the calculator: ")
-    if calculation.lower() == "stop":
-        break
+    calculation = input("Enter your calculation in format (a 'operation' b): ")
     calculation = list(calculation.split())
     op = calculation[1]
     result = 0
@@ -26,3 +24,5 @@ while True:
         print("Invalid operation")
         continue
     print(f"Your result is {result}")
+    if input("Would you like to continue? ").lower() not in "yes":
+        break
