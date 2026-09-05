@@ -1,7 +1,9 @@
-letter_range = list(input("Enter a range of letters: ").split("-"))
-result = []
+from string import ascii_letters
 
-for i in range(ord(letter_range[0]), ord(letter_range[1])+1):
-    result.append(chr(i))
+letters = input("Enter a range of letters: ").split("-")
+alphabet = ascii_letters
 
-print("".join(result))
+start = alphabet.index(letters[0])
+end = alphabet.index(letters[1])
+
+print(alphabet[start:end + 1])
