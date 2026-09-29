@@ -1,5 +1,3 @@
-from os import name
-
 
 class Item:
 
